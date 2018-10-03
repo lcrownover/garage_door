@@ -1,4 +1,4 @@
-from garage_door import 
+from opener import app 
 
 if __name__ == "__main__":
     app.run()

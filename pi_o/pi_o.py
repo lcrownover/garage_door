@@ -1,8 +1,5 @@
 def execute():
-    with open('trf', 'r') as f:
-        for line in f.readlines():
-            print(line.rstrip())
-
+    print('hello world')
     error = False
     if error == False:
         return 0
