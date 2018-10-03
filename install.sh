@@ -4,7 +4,7 @@ apt install -y python3-pip python3-dev build-essential libssl-dev libffi-dev pyt
 
 ln -s nginx/garage_door /etc/nginx/sites-enabled/garage_door
 
-ln -s service/garage_door.service /etc/systemd/system/garage_door
+ln -s service/garage_door.service /etc/systemd/system/garage_door.service
 
 ufw allow 420
 
