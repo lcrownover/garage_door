@@ -1,5 +1,7 @@
 def execute():
     print('hello world')
+    with open('IT_WORKED', 'w+') as f:
+        f.write('YAS QUEEN\n')
     error = False
     if error == False:
         return 0
