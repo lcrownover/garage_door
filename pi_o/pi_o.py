@@ -1,12 +1,10 @@
+import subprocess
+
 def execute():
-    print('hello world')
-    with open('IT_WORKED', 'w+') as f:
-        f.write('YAS QUEEN\n')
-    error = False
-    if error == False:
-        return 0
-    else:
-        return 'Error: couldnt do something' 
+    p = subprocess.Popen(["/bin/bash", '/opt/garage_door/trigger.sh'])
+    p.wait()
+    return p.returncode
+
 
 if __name__ == "__main__":
     execute()

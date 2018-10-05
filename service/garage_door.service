@@ -3,11 +3,11 @@ Description=uWSGI instance to serve garage_door
 After=network.target
 
 [Service]
-User=lcrown
+User=pi
 Group=www-data
 WorkingDirectory=/opt/garage_door
 Environment="PATH=/opt/garage_door/venv/bin"
-ExecStart=/opt/garage_door/venv/bin/uwsgi --ini garage_door.ini
+ExecStart=/opt/garage_door/venv/bin/uwsgi --ini /opt/garage_door/garage_door.ini
 
 [Install]
 WantedBy=multi-user.target
