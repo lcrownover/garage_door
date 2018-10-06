@@ -22,7 +22,9 @@ fi
 systemctl stop polkit
 systemctl disable polkit
 
+cp $G_D/bin/open_boot /etc/init.d/garage_door
 cp $G_D/nginx/garage_door /etc/nginx/sites-enabled/garage_door
+rm -f /etc/nginx/sites-enabled/default
 cp $G_D/service/garage_door.service /etc/systemd/system/garage_door.service
 systemctl daemon-reload
 

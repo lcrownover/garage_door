@@ -1,5 +1,5 @@
 server {
-    listen 420;
+    listen 80;
 
     location / { 
         uwsgi_pass unix:/opt/garage_door/garage_door.sock;
